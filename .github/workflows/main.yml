@@ -31,7 +31,7 @@ jobs:
       - name: Install Dependencies
         if: steps.cache-dsm-toolchains.outputs.cache-hit != 'true'
         run: |
-          mkdir -p ~/.toolchain/apollolake-DSM-7.0-toolchain
+          mkdir -p ~/.toolchain/geminilake-DSM-7.0-toolchain
           wget -q https://sourceforge.net/projects/dsgpl/files/Tool%20Chain/DSM%207.0.0%20Tool%20Chains/Intel%20x86%20Linux%204.4.180%20%28GeminiLake%29/geminilake-gcc750_glibc226_x86_64-GPL.txz
           wget -q https://sourceforge.net/projects/dsgpl/files/toolkit/DSM7.0/ds.geminilake-7.0.dev.txz
           tar -xf geminilake-gcc750_glibc226_x86_64-GPL.txz -C ~/.toolchain/geminilake-DSM-7.0-toolchain
