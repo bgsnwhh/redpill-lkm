@@ -38,7 +38,7 @@ jobs:
           tar -xf ds.geminilake-7.0.dev.txz -C ~/.toolchain usr/local/x86_64-pc-linux-gnu/x86_64-pc-linux-gnu/sys-root/usr/lib/modules/DSM-7.0/
           cp -rf ~/.toolchain/usr/local/x86_64-pc-linux-gnu/x86_64-pc-linux-gnu/sys-root/usr/lib/modules/DSM-7.0/ ~/.toolchain/geminilake-DSM-7.0-toolkit/
           rm -rf ~/.toolchain/usr
-          ~/.toolchain/apollolake-DSM-7.0-toolchain/x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu-gcc --version
+          ~/.toolchain/geminilake-DSM-7.0-toolchain/x86_64-pc-linux-gnu/bin/x86_64-pc-linux-gnu-gcc --version
 
       - name: Build
         shell: bash
